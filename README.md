@@ -7,4 +7,5 @@ La idea de este workshop es create una aplicación desde cero.
 
 ## Creación de la aplicación
 1. Vamos a ver los comandos del angular cli ```ng --help```
-2. Creamos la aplicacion utilizando el angular cli con el siguiente comando: ```> ng new nombre-aplicacion```
+2. Creamos la aplicacion utilizando el angular cli con el siguiente comando: ```ng new nombre-aplicacion```
+3. Levantar la aplicacion recientemente creada con el siguiente comando: ```ng serve```

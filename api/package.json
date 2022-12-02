@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    
+    "kiwi-server": "^1.2.12"
+  },
+  "scripts": {
+    "test": "mocha",
+    "compile": "kc build"
+  },
+  "author": "",
+  "license": "ISC"
+}

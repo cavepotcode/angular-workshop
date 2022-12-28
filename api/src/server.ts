@@ -1,19 +1,26 @@
 import { createKiwiServer, IKiwiOptions } from 'kiwi-server';
 import { UserController } from './controllers/user.controller'
 import * as http from 'http';
+import { HeadersMiddleware } from './headers.middleware.before';
 
 async function validateAuthentication(request: http.IncomingMessage, roles: Array<string>) {
-    
-    return true;
+    let accessToken;
+    accessToken = request.headers['authorization'];
+    console.log(accessToken);
+    if (accessToken) {
+        return true;
+    } else {
+        return false
+    }
 }
 
 const options: IKiwiOptions = {
     controllers: [UserController],
     authorization: validateAuthentication,
-    middlewares: [],
+    middlewares: [HeadersMiddleware],
     cors: {
         enabled: true,
-        domains: ['*']
+        domains: ['http://localhost:4200']
     },
     documentation: {
         enabled: true,

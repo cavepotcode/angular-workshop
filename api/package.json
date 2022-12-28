@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    
-    "kiwi-server": "^1.2.12"
+    "kiwi-server": "^1.2.12",
+    "lodash": "^4.17.21",
+    "uuidv4": "^6.2.13"
   },
   "scripts": {
     "test": "mocha",

@@ -1,0 +1,11 @@
+<div class="modal-header">
+	<h4 class="modal-title">{{info.title}}</h4>
+	<button type="button" class="btn-close" aria-label="Close" (click)="close()"></button>
+</div>
+<div class="modal-body">
+	<p>{{info.text}}</p>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-outline-dark" (click)="close()">{{info.close? info.close: 'Close'}}</button>
+	<button type="button" class="btn btn-outline-dark" (click)="confirm()">{{info.confirm? info.confirm: 'Confirm'}}</button>
+</div>
